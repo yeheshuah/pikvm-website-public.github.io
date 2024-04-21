@@ -1,14 +1,14 @@
 @font-face {
   font-family: myriad-pro-regular;
-  src: url(assets/fonts/MyriadPro-Regular.otf);
+  src: url(../assets/fonts/MyriadPro-Regular.otf);
 }
 
 @font-face {
   font-family: myriad-pro-semibold;
-  src: url(assets/fonts/MyriadPro-Semibold.otf);
+  src: url(../assets/fonts/MyriadPro-Semibold.otf);
 }
 
 @font-face {
   font-family: myriad-pro-bold;
-  src: url(assets/fonts/MyriadPro-Bold.otf);
+  src: url(../assets/fonts/MyriadPro-Bold.otf);
 }
