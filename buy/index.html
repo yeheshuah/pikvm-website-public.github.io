@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<script>
+  class NavigationBar {
+  	static isInit = false
+  	static showDropdown = false
+  
+  	static dropdown //NOTE: HTML Element
+  
+  	static {
+  		window.addEventListener('load', function () {
+  			NavigationBar.dropdown =
+  				document.getElementById('navbar-dropdown')
+  
+  			NavigationBar.isInit = true
+  		})
+  	}
+  
+  	static onMenuClick() {
+  		if (!NavigationBar.isInit) {
+  			return
+  		}
+  
+  		if (NavigationBar.showDropdown) {
+  			NavigationBar.dropdown.className = 'navbar-dropdown hide'
+  			//- OR
+  			//- NavigationBar.dropdown.classList.remove('show')
+  			//- NavigationBar.dropdown.classList.add('hide')
+  		} else {
+  			NavigationBar.dropdown.className = 'navbar-dropdown show'
+  			//- OR
+  			//- NavigationBar.dropdown.classList.remove('hide')
+  			//- NavigationBar.dropdown.classList.add('show')
+  		}
+  
+  		NavigationBar.showDropdown = !NavigationBar.showDropdown
+  	}
+  }
+</script>
+<html lang="en">
+  <head>
+    <title>PiKVM - Order</title>
+    <meta charset="utf-8">
+    <meta name="description" content="TODO: Site description">
+    <meta name="keywords" content="TODO: Site keywords">
+    <meta name="author" content="TODO: Site author">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="../css/main.css">
+  </head>
+  <body>
+    <div class="navbar-container">
+      <div class="navbar-top">
+        <div class="navbar-top-logo"><img class="logo" src="/assets/images/logo_pikvm.svg" alt="PiKVM Logo" title="PiKVM Logo"></div>
+        <div class="navbar-content">
+          <div class="navbar-content-menu"><img src="/assets/images/menu.svg" alt="Show menu" title="Show menu" onclick="NavigationBar.onMenuClick()"></div>
+          <div class="navbar-menu">
+            <ul class="navbar-links">
+              <li><a href="/" target="_self">Home</a>
+              </li>
+              <li><a href="/products" target="_self">Products</a>
+              </li>
+              <li><a href="/support" target="_self">Support</a>
+              </li>
+              <li><a class="active" href="javascript:void(0)" target="_self">Order</a>
+              </li>
+              <li><a href="https://github.com/pikvm/pikvm" target="_blank">DIY</a>
+              </li>
+              <li><a href="/about_us" target="_self">About us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr class="thin">
+    </div>
+    <div class="navbar-dropdown hide" id="navbar-dropdown">
+      <ul class="navbar-links">
+        <li><a href="/" target="_self">Home</a>
+        </li>
+        <li><a href="/products" target="_self">Products</a>
+        </li>
+        <li><a href="/support" target="_self">Support</a>
+        </li>
+        <li><a class="active" href="javascript:void(0)" target="_self">Order</a>
+        </li>
+        <li><a href="https://github.com/pikvm/pikvm" target="_blank">DIY</a>
+        </li>
+        <li><a href="/about_us" target="_self">About us</a>
+        </li>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="simple-column-container">
+        <div class="simple-column-content">
+          <div class="order-block"><span class="title">Where to buy.</span>
+            <div class="divider"></div>
+            <div class="order-block-links">
+                    <div class="titled-card-holder">
+                      <div class="titled-card">
+                        <div class="titled-card-title">
+                          <p class="subtitle">Australia</p>
+                          <hr class="thin">
+                        </div>
+                        <div class="titled-card-links"><a class="titled-card-link" href="https://core-electronics.com.au/catalogsearch/result/?q=pikvm" target="_blank">Core Electronics</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="titled-card-holder">
+                      <div class="titled-card">
+                        <div class="titled-card-title">
+                          <p class="subtitle">Canada</p>
+                          <hr class="thin">
+                        </div>
+                        <div class="titled-card-links"><a class="titled-card-link" href="https://www.pishop.ca/search.php?search_query=pikvm&section=product" target="_blank">PiShop.ca</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="titled-card-holder">
+                      <div class="titled-card">
+                        <div class="titled-card-title">
+                          <p class="subtitle">Czech Republic</p>
+                          <hr class="thin">
+                        </div>
+                        <div class="titled-card-links"><a class="titled-card-link" href="https://rpishop.cz/pro-raspberry-pi/4621-hipi-pikvm-v3-hat-pro-raspberry-pi-4-605926258698.html" target="_blank">RPishop.cz</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="titled-card-holder">
+                      <div class="titled-card">
+                        <div class="titled-card-title">
+                          <p class="subtitle">Denmark</p>
+                          <hr class="thin">
+                        </div>
+                        <div class="titled-card-links"><a class="titled-card-link" href="https://raspberrypi.dk/en/?s=pikvm&post_type=product" target="_blank">RaspberryPi.dk</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="titled-card-holder">
+                      <div class="titled-card">
+                        <div class="titled-card-title">
+                          <p class="subtitle">France</p>
+                          <hr class="thin">
+                        </div>
+                        <div class="titled-card-links"><a class="titled-card-link" href="https://www.kubii.com/en/nano-computers/3858-pikvm-v3-pre-assembled-with-raspberry-pi-4-2gb-605926258841.html" target="_blank">Kubii.com</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="titled-card-holder">
+                      <div class="titled-card">
+                        <div class="titled-card-title">
+                          <p class="subtitle">Germany</p>
+                          <hr class="thin">
+                        </div>
+                        <div class="titled-card-links"><a class="titled-card-link" href="https://www.welectron.com/navi.php?qs=pikvm" target="_blank">Welectron</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="titled-card-holder">
+                      <div class="titled-card">
+                        <div class="titled-card-title">
+                          <p class="subtitle">Greece</p>
+                          <hr class="thin">
+                        </div>
+                        <div class="titled-card-links"><a class="titled-card-link" href="https://nettop.gr/index.php/component/uemart_category_id=0/?keyword=pikvm&limitstart=0&option=com_virtuemart&view=category&search=true&virtuemart_category_id=0" target="_blank">Nettop</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="titled-card-holder">
+                      <div class="titled-card">
+                        <div class="titled-card-title">
+                          <p class="subtitle">Netherlands</p>
+                          <hr class="thin">
+                        </div>
+                        <div class="titled-card-links"><a class="titled-card-link" href="https://www.elektor.com/catalogsearch/result/?q=pikvm" target="_blank">Elektor</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="titled-card-holder">
+                      <div class="titled-card">
+                        <div class="titled-card-title">
+                          <p class="subtitle">South Korea</p>
+                          <hr class="thin">
+                        </div>
+                        <div class="titled-card-links"><a class="titled-card-link" href="https://netsket.co.kr/product/list.html?cate_no=36" target="_blank">Netsket</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="titled-card-holder">
+                      <div class="titled-card">
+                        <div class="titled-card-title">
+                          <p class="subtitle">Sweden, Norway</p>
+                          <hr class="thin">
+                        </div>
+                        <div class="titled-card-links"><a class="titled-card-link" href="https://www.direktronik.se/direktronik/natverk/kvm-switcharextenders/kvm-forlangningip-remote/kvm-switch-over-ip-full-hd/" target="_blank">DirekTronik</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="titled-card-holder">
+                      <div class="titled-card">
+                        <div class="titled-card-title">
+                          <p class="subtitle">Switzerland</p>
+                          <hr class="thin">
+                        </div>
+                        <div class="titled-card-links"><a class="titled-card-link" href="https://www.pi-shop.ch/catalogsearch/result/?q=pikvm" target="_blank">Pi-Shop.ch</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="titled-card-holder">
+                      <div class="titled-card">
+                        <div class="titled-card-title">
+                          <p class="subtitle">United Kingdom</p>
+                          <hr class="thin">
+                        </div>
+                        <div class="titled-card-links"><a class="titled-card-link" href="https://shop.pimoroni.com/?q=pikvm" target="_blank">Pimoroni</a><a class="titled-card-link" href="https://thepihut.com/pages/search-results?q=pikvm" target="_blank">The Pi Hut</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="titled-card-holder">
+                      <div class="titled-card">
+                        <div class="titled-card-title">
+                          <p class="subtitle">United States</p>
+                          <hr class="thin">
+                        </div>
+                        <div class="titled-card-links"><a class="titled-card-link" href="https://www.pishop.us/search.php?search_query=pikvm&section=product" target="_blank">PiShop.us</a><a class="titled-card-link" href="https://cloudfree.shop/?s=pikvm" target="_blank">CloudFree</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="titled-card-holder">
+                      <div class="titled-card">
+                        <div class="titled-card-title">
+                          <p class="subtitle">Other</p>
+                          <hr class="thin">
+                        </div>
+                        <div class="titled-card-links"><a class="titled-card-link" href="https://shop.hipi.io/brands/pikvm" target="_blank">HiPi International Store</a>
+                        </div>
+                      </div>
+                    </div>
+            </div>
+            <div class="divider"></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-block">
+        <div class="footer-block-container">
+          <div class="footer-block-row">
+            <div class="footer-block-col">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="footer-block-col">
+              <p class="right">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
