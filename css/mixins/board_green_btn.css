@@ -11,7 +11,7 @@ a.board-green-btn {
   cursor: pointer;
   display: inline-block;
   background-color: var(--pi-page-green);
-  background-image: url('../../assets/images/mother_board.png');
+  background-image: url('../..assets/images/mother_board.png');
   background-position: left;
   background-repeat: no-repeat;
   color: var(--pi-page-white);
