@@ -1,0 +1,89 @@
+@media only screen and (max-width: 767px) {
+  .youtube-card {
+    width: 100%;
+  }
+  .youtube-card-top {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 20px 0;
+  }
+
+  .youtube-card-top-img {
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .youtube-card-top-img:hover {
+    scale: 1.1 1.1;
+    z-index: 0;
+  }
+
+  .youtube-card-bottom {
+    text-align: left;
+    min-height: 120px;
+    padding-bottom: 20px;
+    /* position: relative; */
+  }
+  .left-quote {
+    display: none;
+    opacity: 0;
+  }
+  .right-quote {
+    display: none;
+    opacity: 0;
+  }
+
+  .left-quote p {
+    font-size: 44pt;
+  }
+
+  .right-quote p {
+    font-size: 44pt;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .youtube-card {
+    width: 100%;
+  }
+  .youtube-card-top {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 20px 0;
+  }
+
+  .youtube-card-top-img {
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .youtube-card-top-img:hover {
+    scale: 1.1 1.1;
+    z-index: 0;
+  }
+
+  .youtube-card-bottom {
+    text-align: left;
+    min-height: 120px;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  .left-quote {
+    position: absolute;
+    top: 0px;
+    left: -40px;
+  }
+  .right-quote {
+    position: absolute;
+    bottom: 0px;
+    right: -40px;
+  }
+
+  .left-quote p {
+    font-size: 44pt;
+  }
+
+  .right-quote p {
+    font-size: 44pt;
+  }
+}

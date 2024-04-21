@@ -1,0 +1,65 @@
+@media only screen and (max-width: 767px) {
+  .top-illustration {
+    width: 100%;
+  }
+
+  .top-block-buttons .left {
+    float: left;
+  }
+
+  .top-block-buttons .right {
+    float: right;
+  }
+
+  .top-block-customer-list-top {
+    font-family: myriad-pro-regular;
+    font-size: 12pt;
+  }
+
+  .top-block-customer-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+
+  .top-block-customer {
+    margin-left: auto;
+    margin-right: auto;
+    height: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .top-illustration {
+    height: 420px;
+  }
+
+  .top-block-buttons .left {
+    float: left;
+  }
+  .top-block-buttons .right {
+    margin-left: 20px;
+    float: left;
+  }
+
+  .top-block-customer-list-top {
+    font-family: myriad-pro-regular;
+    font-size: 12pt;
+  }
+
+  .top-block-customer-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+
+  .top-block-customer {
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+  }
+}

@@ -1,0 +1,21 @@
+.order-block-links {
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 767px) {
+  .order-block {
+    min-height: 640px;
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .order-block {
+    min-height: 680px;
+    text-align: center;
+    padding: 20px;
+  }
+}

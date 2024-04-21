@@ -1,0 +1,21 @@
+@media only screen and (max-width: 767px) {
+  .feature-illustration {
+    width: 100%;
+  }
+
+  .feature-text-block {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .feature-illustration {
+    width: 95%;
+  }
+
+  .feature-text-block {
+    width: 95%;
+    text-align: left;
+  }
+}

@@ -1,0 +1,14 @@
+:root {
+  --pi-page-fg: #000000;
+  --pi-page-white: #ffffff;
+  --pi-page-light-grey: #e4e6e8;
+  --pi-page-grey: #f6f8fa;
+  --pi-page-grey-shadow: #d6d8da;
+  --pi-page-semi-dark-grey: #d0d7de;
+  --pi-page-dark-grey: #353535;
+  --pi-page-green: #1f883d;
+  --pi-page-purple: #8250df;
+  --pi-page-red: #ff4242;
+  --pi-page-divider-solid: 1px solid #d0d7de;
+  --pi-page-work-width-desktop: 1120px;
+}

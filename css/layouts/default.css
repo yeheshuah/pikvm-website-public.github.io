@@ -1,0 +1,14 @@
+*,
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--pi-page-white);
+  color: var(--pi-page-fg);
+  font-family: myriad-pro-regular;
+  overflow-y: scroll;
+}

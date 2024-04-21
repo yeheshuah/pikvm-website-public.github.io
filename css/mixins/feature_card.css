@@ -1,0 +1,36 @@
+.feature-card {
+  width: 100%;
+  box-shadow: 0 3px 30px var(--pi-page-grey-shadow);
+  border-radius: 8px 8px 8px 8px;
+}
+
+.feature-card-top {
+  background-color: var(--pi-page-purple);
+  border-radius: 8px 8px 0 0;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.feature-card-top-img {
+  max-height: 56px;
+  margin: auto;
+}
+
+.feature-card-bottom {
+  background-color: var(--pi-page-white);
+  border-radius: 0 0 8px 8px;
+  padding: 20px;
+  text-align: center;
+  min-height: 120px;
+}
+
+@media only screen and (min-width: 768px) {
+  .feature-card-bottom {
+    background-color: var(--pi-page-white);
+    border-radius: 0 0 8px 8px;
+    padding: 20px;
+    text-align: center;
+    min-height: 180px;
+  }
+}
